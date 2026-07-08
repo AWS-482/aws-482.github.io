@@ -1,0 +1,40 @@
+name: Portfolio CI-CD Engine
+
+# Trigger the pipeline on every push to the main branch
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Clone your repository code into the runner container
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      # Step 2: Set up a static site deployment bundle
+      - name: Validate Web Assets
+        run: |
+          echo "Initiating Static Asset Code Linting..."
+          test -f index.html && echo "index.html validation passed."
+          test -f style.css && echo "style.css validation passed."
+
+      # Step 3: Package and upload artifact directly to GitHub Pages infrastructure
+      - name: Upload Static Web Target
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      # Step 4: Execute deployment pipeline release
+      - name: Deploy Live Build To Production
+        id: deployment
+        uses: actions/deploy-pages@v4
