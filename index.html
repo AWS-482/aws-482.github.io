@@ -3,86 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arun Manda | DevOps Engineer</title>
+    <title>Arun Manda | DevOps Cloud & Platform Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="hero">
-        <div class="container">
-            <h1>Arun Manda</h1>
-            <h2>DevOps Engineer | AWS | CI/CD</h2>
-            <p>DevOps Engineer with 4+ years of experience building and optimizing CI/CD pipelines, automating cloud infrastructure on AWS, and deploying containerized microservices.</p>
-            <div class="cta-buttons">
-                <a href="mailto:arunprabha482@gmail.com" class="btn primary"><i class="fas fa-envelope"></i> Contact Me</a>
-                <a href="https://linkedin.com" target="_blank" class="btn secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo-terminal">
+                <span class="pulse-indicator"></span>
+                <span class="user-tag">operator@arun-manda:~$</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="active">/about</a>
+                <a href="#experience">/experience</a>
+                <a href="#skills">/stack</a>
+                <a href="mailto:arunprabha482@gmail.com">/contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO PANEL -->
+    <header id="about" class="hero-panel container">
+        <div class="console-box">
+            <div class="console-header">
+                <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                <span class="console-title">system_profile.yaml</span>
+            </div>
+            <div class="console-body">
+                <h1>Arun Manda</h1>
+                <h2>DevOps & Cloud Infrastructure Engineer</h2>
+                <p class="profile-summary">
+                    DevOps Engineer with 4+ years of expertise designing and optimizing containerized architecture and cloud environments. Specialized in high-availability multi-stage CI/CD pipelines, GitOps workflows, zero-downtime microservices orchestration, and infrastructure monitoring at scale.
+                </p>
+                <div class="badge-row">
+                    <span class="badge secondary"><i class="fab fa-aws"></i> AWS Advanced</span>
+                    <span class="badge secondary"><i class="fab fa-docker"></i> Kubernetes/EKS</span>
+                    <span class="badge secondary"><i class="fas fa-code-branch"></i> GitOps Automation</span>
+                </div>
+                <div class="action-row">
+                    <a href="mailto:arunprabha482@gmail.com" class="btn console-btn primary"><i class="fas fa-terminal"></i> Connect Operator</a>
+                    <a href="https://linkedin.com" target="_blank" class="btn console-btn secondary"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
             </div>
         </div>
     </header>
 
-    <section class="metrics container">
-        <div class="metric-card">
-            <h3>4+ Years</h3>
-            <p>Cloud & DevOps Experience</p>
+    <!-- METRICS TELEMETRY -->
+    <section class="telemetry-grid container">
+        <div class="telemetry-card">
+            <span class="telemetry-label">EXPERIENCE</span>
+            <span class="telemetry-value">4+ Years</span>
+            <span class="telemetry-sub">Enterprise Production</span>
         </div>
-        <div class="metric-card">
-            <h3>30%</h3>
-            <p>CI/CD Deployment Time Speedup</p>
+        <div class="telemetry-card">
+            <span class="telemetry-label">CI/CD VELOCITY</span>
+            <span class="telemetry-value text-green">-30%</span>
+            <span class="telemetry-sub">Pipeline Execution Time</span>
         </div>
-        <div class="metric-card">
-            <h3>Zero</h3>
-            <p>Downtime Release Strategies</p>
-        </div>
-    </section>
-
-    <section class="experience container">
-        <h2>Professional Experience</h2>
-        
-        <div class="job">
-            <div class="job-header">
-                <h3>DevOps Engineer</h3>
-                <span>Tech Mahindra (2022 - Present)</span>
-            </div>
-            <ul>
-                <li>Built and optimized CI/CD pipelines using Jenkins and GitHub Actions, reducing deployment effort.</li>
-                <li>Migrated monolithic applications to microservices architecture using Docker and Kubernetes (EKS).</li>
-                <li>Automated AWS infrastructure provisioning using Terraform and Ansible.</li>
-            </ul>
-        </div>
-
-        <div class="job">
-            <div class="job-header">
-                <h3>Digital Banking Support Engineer</h3>
-                <span>ICICI Bank (2021 - 2022)</span>
-            </div>
-            <ul>
-                <li>Supported CI/CD pipelines for critical banking web applications using Jenkins and Git.</li>
-                <li>Monitored infrastructure health and application performance using Grafana and ELK Stack.</li>
-            </ul>
+        <div class="telemetry-card">
+            <span class="telemetry-label">INFRASTRUCTURE</span>
+            <span class="telemetry-value">100%</span>
+            <span class="telemetry-sub">Declarative (IaC via Code)</span>
         </div>
     </section>
 
-    <section class="skills container">
-        <h2>Technical Toolbox</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Cloud & Containers</h4>
-                <p>AWS (EC2, ECS, EKS, S3, VPC), Docker, Kubernetes</p>
+    <!-- SYSTEM EXPERIENCE TIMELINE -->
+    <section id="experience" class="timeline-section container">
+        <h3 class="section-title">// Core Professional History</h3>
+
+        <div class="timeline-block">
+            <div class="timeline-meta">
+                <span class="timeline-time">2022 — PRESENT</span>
+                <span class="status-pill platform">Tech Mahindra</span>
             </div>
-            <div class="skill-category">
-                <h4>Automation & IaC</h4>
-                <p>Terraform, Ansible, CloudFormation, Jenkins, GitHub Actions</p>
+            <div class="timeline-content">
+                <h4>DevOps Engineer <span class="award-tag">🏆 Standing Ovation Award Recipient</span></h4>
+                <p class="job-desc">Architected and engineered continuous integration pipelines and cloud migration initiatives for enterprise applications, heavily focusing on microservice transformations and automated scaling configurations.</p>
+                
+                <ul class="task-list">
+                    <li><span class="bullet">🚀</span> <strong>Infrastructure-as-Code:</strong> Standardized multi-environment AWS infrastructure deployments using reusable <strong>Terraform Modules</strong> and **Ansible Playbooks** to eliminate drift.</li>
+                    <li><span class="bullet">🚀</span> <strong>Container Orchestration:</strong> Migrated legacy monoliths into Dockerized clusters managed across <strong>Amazon EKS and ECS</strong> with zero-downtime rollouts.</li>
+                    <li><span class="bullet">🚀</span> <strong>Code Quality Gates:</strong> Unified testing pipelines by embedding <strong>SonarQube validation gates</strong> directly inside Jenkins & GitHub Actions frameworks.</li>
+                    <li><span class="bullet">🚀</span> <strong>Telemetry Ecosystem:</strong> Configured cluster-wide application observability using <strong>Prometheus metrics scraping</strong> matched with operational <strong>Grafana Dashboards</strong>.</li>
+                </ul>
+
+                <div class="tag-row">
+                    <span class="tech-tag">AWS (EKS/ECS)</span><span class="tech-tag">Terraform</span><span class="tech-tag">Jenkins</span><span class="tech-tag">GitHub Actions</span><span class="tech-tag">Ansible</span><span class="tech-tag">Grafana</span>
+                </div>
             </div>
-            <div class="skill-category">
-                <h4>Monitoring & Tools</h4>
-                <p>Prometheus, Grafana, ELK Stack, Python, Shell Scripting</p>
+        </div>
+
+        <div class="timeline-block">
+            <div class="timeline-meta">
+                <span class="timeline-time">2021 — 2022</span>
+                <span class="status-pill platform">ICICI Bank</span>
+            </div>
+            <div class="timeline-content">
+                <h4>Digital Banking Support & DevOps Engineer</h4>
+                <p class="job-desc">Supported high-availability internal and customer-facing banking microservices, focused on platform monitoring, log aggregation, and automated operational provisioning.</p>
+                
+                <ul class="task-list">
+                    <li><span class="bullet">🚀</span> <strong>Log Aggregation:</strong> Engineered application performance log tracing strategies across staging stacks using the <strong>ELK Stack (Elasticsearch, Logstash, Kibana)</strong>.</li>
+                    <li><span class="bullet">🚀</span> <strong>Toil Reduction:</strong> Built custom administrative execution toolsets leveraging <strong>Python and complex Shell scripts</strong> to remove operational bottlenecks.</li>
+                </ul>
+
+                <div class="tag-row">
+                    <span class="tech-tag">Jenkins</span><span class="tech-tag">ELK Stack</span><span class="tech-tag">Shell Scripting</span><span class="tech-tag">Python</span><span class="tech-tag">Docker</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 Arun Manda. Built with HTML & CSS. Hosted via GitHub Pages.</p>
+    <!-- SKILLS MATRIX -->
+    <section id="skills" class="skills-matrix container">
+        <h3 class="section-title">// Core Capabilities Matrix</h3>
+        <div class="matrix-grid">
+            <div class="matrix-box">
+                <h5><i class="fas fa-cloud"></i> Orchestration & Compute</h5>
+                <p>AWS EKS, Amazon ECS, Docker, Kubernetes Engine, Amazon EC2, AWS Lambda Serverless.</p>
+            </div>
+            <div class="matrix-box">
+                <h5><i class="fas fa-network-wired"></i> Configuration & Code</h5>
+                <p>Terraform, Ansible Automation, AWS CloudFormation templates, Linux Administration (Ubuntu).</p>
+            </div>
+            <div class="matrix-box">
+                <h5><i class="fas fa-sync"></i> Automated Delivery (CI/CD)</h5>
+                <p>Jenkins Automation Server, GitHub Actions, Git Workflows, Maven, SonarQube Code Quality.</p>
+            </div>
+            <div class="matrix-box">
+                <h5><i class="fas fa-chart-line"></i> Monitoring & Aggregation</h5>
+                <p>Prometheus Time-Series DB, Grafana, ELK Stack Analytics, AWS CloudWatch Logs.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPLIANCE/CERT FOOTER -->
+    <footer class="system-footer">
+        <div class="container footer-flex">
+            <p>System status: <span class="text-green">● Online & Operational</span></p>
+            <p>© 2026 Arun Manda. Built via static structural HTML/CSS.</p>
+        </div>
     </footer>
 
 </body>
